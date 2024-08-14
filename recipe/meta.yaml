@@ -1,5 +1,5 @@
 {% set name = "shinywidgets" %}
-{% set version = "0.3.2" %}
+{% set version = "0.3.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/shinywidgets-{{ version }}.tar.gz
-  sha256: c5c767f6d4176f90bbcf756657d307d47b96e6efdd9535a33c8b0d7821068a89
+  sha256: 9827da55d3f57dfa0b8c5158547dde048d52a835bca1a8720655fcb0990ac008
 
 build:
   noarch: python
