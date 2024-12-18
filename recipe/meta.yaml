@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - ipywidgets >=7.6.5
     - jupyter_core
     - shiny >=0.6.1.9005
@@ -33,6 +33,7 @@ test:
     # broken by py-shiny feedstock
     # - pip check
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
