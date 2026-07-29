@@ -17,10 +17,12 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools
+    - hatchling >=1.26.0
+    - hatch-vcs >=0.4.0
     - pip
   run:
     - python >={{ python_min }}
+    - anywidget
     - ipywidgets >=7.6.5
     - jupyter_core
     - shiny >=0.6.1.9005
